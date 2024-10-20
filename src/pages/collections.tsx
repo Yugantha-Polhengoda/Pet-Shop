@@ -3,14 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import "../app/globals.css";
 
-import dropdown_icon from "/public/Images/dropdown_icon.png"; // Adjusted the import path
+import dropdown_icon from "/public/Images/dropdown_icon.png";
 import Navbar from "@/components/Navbar";
 import AllPuppiesBanner from "@/components/AllPuppiesBanner";
 import Footer from "@/components/Footer";
 
 export default function Collections() {
-  const [pets, setPets] = useState([]); // Array to hold all pet data
-  const [filteredPets, setFilteredPets] = useState([]); // Array to hold filtered pet data
+  const [pets, setPets] = useState([]); 
+  const [showFilter, setShowFilter] = useState(false);
+  const [filteredPets, setFilteredPets] = useState([]); 
   const [filters, setFilters] = useState({
     gender: [],
     minPrice: '',
@@ -104,7 +105,10 @@ export default function Collections() {
           {/* Filter Options */}
           <div className="min-w-60">
             <div className="flex flex-row-reverse sm:flex-row gap-2 items-center justify-between">
-              <div className="flex gap-2 items-center ">
+              <div
+                onClick={() => setShowFilter(!showFilter)}
+                className="flex gap-2 items-center "
+              >
                 <svg
                   className="sm:hidden"
                   width="24"
@@ -137,7 +141,7 @@ export default function Collections() {
             </div>
 
             {/* Filter contents */}
-            <div className="hidden sm:block">
+            <div className={`${showFilter ? "" : "hidden"} sm:block`}>
               <div className="py-3 border-b-2 border-[#e5e5e5]">
                 <p className="mb-3 text-sm font-medium">Gender</p>
                 <label className="flex gap-2">
