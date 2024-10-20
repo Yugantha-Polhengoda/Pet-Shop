@@ -7,10 +7,27 @@ const AdoptionBanner = () => {
     return (
       <div className="hidden lg:flex flex-col lg:flex-row lg:h-[400px] text-center lg:text-left bg-[#F8E6C1] overflow-hidden px-5 lg:pl-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]">
         {/* Hero left */}
-        <div className="w-full flex item-center justify-center pt-8 lg:pt-14">
+        <div className=" w-full flex item-center justify-center">
           <div className="text-[#414141]">
             <div className="items-center gap-2">
-              <div className="flex item-center justify-center lg:items-start lg:justify-start">
+              <svg
+                className="h-[450px] -ml-40"
+                width="642"
+                height="378"
+                viewBox="0 0 642 378"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="782.292"
+                  height="635"
+                  rx="99"
+                  transform="matrix(-0.904604 0.426252 0.426252 0.904604 403.665 -360)"
+                  fill="#FCEED5"
+                />
+              </svg>
+
+              <div className="flex item-center justify-center lg:items-start lg:justify-start -mt-96">
                 <h1 className="text-[34px] md:text-5xl font-extrabold text-[#002A48]">
                   Adoption
                 </h1>
@@ -35,7 +52,7 @@ const AdoptionBanner = () => {
                 Adopt a pet and give it a home,
                 <br /> it will be love you back unconditionally.
               </p>
-              <div className="flex justify-center lg:float-start space-x-2 sm:space-x-4 pt-10">
+              <div className="absolute flex justify-center lg:float-start space-x-2 sm:space-x-4 pt-10">
                 <button className="border border-[#0A3052] text-sm text-[#0A3052] py-2 px-4 sm:px-6 gap-2 rounded-full flex items-center hover:bg-[#0A3052] hover:text-white transition">
                   View Intro
                   <svg

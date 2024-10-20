@@ -10,20 +10,34 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <div className="relative z-[999] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[130px]">
-       <Navbar />
+    <main className="flex flex-col items-center justify-center overflow-hidden">
+      <div className="w-full max-w-[1440px] relative z-[999] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[130px]">
+        <Navbar />
       </div>
-      <div className="-mt-24 relative z-0">
+      <div className="-mt-24 w-full relative z-0">
         <Hero />
       </div>
-      <PetsList />
-      <HeroSmallBanner />
-      <ProductsList />
-      <PetSellers />
-      <AdoptionBanner />
-      <PetKnowledge />
-      <Footer />
+      <div className="w-full max-w-[1440px]">
+        <PetsList />
+      </div>
+      <div className="w-full max-w-[1440px]">
+        <HeroSmallBanner />
+      </div>
+      <div className="w-full max-w-[1440px]">
+        <ProductsList />
+      </div>
+      <div className="w-full max-w-[1440px]">
+        <PetSellers />
+      </div>
+      <div className="w-full max-w-[1440px]">
+        <AdoptionBanner />
+      </div>
+      <div className="w-full max-w-[1440px]">
+        <PetKnowledge />
+      </div>
+      <div className="w-full">
+        <Footer />
+      </div>
     </main>
   );
 }

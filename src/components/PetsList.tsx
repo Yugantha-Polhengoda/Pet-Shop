@@ -62,7 +62,9 @@ const PetsList = () => {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-6">
           {pets.map((pet) => (
-            <PetCard key={pet.id} pet={pet} />
+            <Link href={`/pets/${pet.id}`}>
+              <PetCard key={pet.id} pet={pet} />
+            </Link>
           ))}
         </div>
       </div>

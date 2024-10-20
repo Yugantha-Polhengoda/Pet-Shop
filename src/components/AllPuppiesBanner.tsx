@@ -5,7 +5,7 @@ import AllPuppies from "/public/Images/AllPuppiesBanner.png";
 
 const AllPuppiesBanner = () => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse lg:h-[400px] text-center lg:text-right bg-[#F8E6C1] overflow-hidden px-5 rounded-3xl">
+    <div className="flex flex-col lg:flex-row-reverse lg:h-[380px] text-center lg:text-right bg-[#F8E6C1] overflow-hidden px-3 rounded-3xl">
       {/* Hero left */}
       <div className="w-full flex item-center justify-center pt-8">
         <div className="text-[#414141]">
@@ -41,11 +41,50 @@ const AllPuppiesBanner = () => {
         </div>
       </div>
       {/* Hero Left */}
-      <Image
-        src={AllPuppies}
-        alt="Hero_Banner"
-        className="lg:max-w-[530px] xl:w-auto lg:mt-28"
-      />
+      <div className="relative w-full flex justify-center items-center mt- lg:ml-20">
+        <svg
+          className="absolute max-w-[500px] sm:max-w-full z-10 mt-60 sm:mt-80 ml-20 sm:-ml-[97px]"
+          width="702"
+          height="413"
+          viewBox="0 0 702 413"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="89.2182"
+            y="-14"
+            width="635"
+            height="635"
+            rx="99"
+            transform="rotate(9.35484 89.2182 -14)"
+            fill="#003459"
+          />
+        </svg>
+
+        <svg
+          className=" absolute max-w-[650px] sm:max-w-full z-10 mt-72 md:mt-40 lg:mt-60 ml-72 sm:ml-16  rotate-6"
+          width="781"
+          height="483"
+          viewBox="0 0 781 483"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="238.67"
+            y="-32"
+            width="635"
+            height="635"
+            rx="99"
+            transform="rotate(25.23 238.67 -32)"
+            fill="#F7DBA7"
+          />
+        </svg>
+        <Image
+          src={AllPuppies}
+          alt="Hero_Banner"
+          className="w-auto lg:w-[600px] mt-4 lg:mt-[185px] z-20"
+        />
+      </div>
     </div>
   );
 }
