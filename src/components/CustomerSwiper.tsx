@@ -39,7 +39,7 @@ const CustomerSwiper = () => {
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}
-          style={{ paddingBottom: "40px" }} // Adds space for the pagination dots
+          style={{ paddingBottom: "40px" }}
         >
           {customers.map((customer, index) => (
             <SwiperSlide key={index}>

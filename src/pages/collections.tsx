@@ -19,14 +19,14 @@ export default function Collections() {
     breed: [],
   });
 
-  // Fetch pet data from API
+  
   useEffect(() => {
     const fetchPets = async () => {
       try {
         const response = await fetch('https://monitor-backend-rust.vercel.app/api/pets');
         const data = await response.json();
         setPets(data);
-        setFilteredPets(data); // Initialize filtered pets with all pets
+        setFilteredPets(data);
       } catch (error) {
         console.error('Error fetching pets:', error);
       }
@@ -35,7 +35,7 @@ export default function Collections() {
     fetchPets();
   }, []);
 
-  // Handle filter changes
+  
   const handleFilterChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -52,14 +52,14 @@ export default function Collections() {
       };
     });
 
-    // Immediately filter the pets after setting the filters
+    
     filterData({
       ...filters,
       [name]: type === 'checkbox' ? (checked ? [...filters[name], value] : filters[name].filter(item => item !== value)) : value,
     });
   };
 
-  // Function to filter pets based on selected filters
+  
   const filterData = (updatedFilters) => {
     const filtered = pets.filter((pet) => {
       const genderMatch = updatedFilters.gender.length === 0 || updatedFilters.gender.includes(pet.gender);
