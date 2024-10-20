@@ -30,6 +30,61 @@ const Hero = () => {
         <div className="text-[#414141]">
           <div className="items-center gap-2">
             <svg
+              className="absolute h-5 fill-[#f0d5a7] ml-[270px] md:ml-[550px] xl:ml-[680px] mt-14 md:mt-2"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-2"
+                y="12.6443"
+                width="21.4707"
+                height="21.4707"
+                rx="6"
+                transform="rotate(-43.0046 -2 12.6443)"
+                fill=""
+              />
+            </svg>
+            <svg
+              className="absolute fill-[#f0d5a7] ml-[180px] md:ml-[550px] xl:ml-[650px] mt-16 lg:mt-[85px]"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-2"
+                y="12.6443"
+                width="21.4707"
+                height="21.4707"
+                rx="6"
+                transform="rotate(-43.0046 -2 12.6443)"
+                fill=""
+              />
+            </svg>
+            <svg
+              className="absolute ml-[175px] md:ml-[550px] xl:ml-[650px] mt-[74px] lg:mt-24"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-2"
+                y="12.6443"
+                width="21.4707"
+                height="21.4707"
+                rx="6"
+                transform="rotate(-43.0046 -2 12.6443)"
+                fill="#002A48"
+              />
+            </svg>
+
+            <svg
               className="-ml-[17px]"
               width="77"
               height="77"
@@ -75,6 +130,25 @@ const Hero = () => {
               </button>
             </div>
           </div>
+          <svg
+            className="absolute mt-28 -ml-0"
+            width="751"
+            height="93"
+            viewBox="0 0 751 93"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              opacity="0.4"
+              x="438.334"
+              y="-38"
+              width="635"
+              height="635"
+              rx="99"
+              transform="rotate(56.47 438.334 -38)"
+              fill="#F7DBA7"
+            />
+          </svg>
         </div>
       </div>
       {/* Hero Left */}

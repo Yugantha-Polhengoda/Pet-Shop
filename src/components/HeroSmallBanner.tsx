@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 import heroBanner1 from "/public/Images/heroBanner1.png";
 
 const HeroSmallBanner = () => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse lg:h-[400px] text-center lg:text-right bg-[#003459] overflow-hidden px-2 lg:pr-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px] max-w-[1440px]">
+    <div className="relative z-10 flex flex-col lg:flex-row-reverse lg:h-[400px] text-center lg:text-right lg:bg-[#003459] bg-[#0A3052] overflow-hidden px-2 lg:pr-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px] max-w-[1440px]">
       {/* Hero left */}
       <div className="relative items-center w-full flex item-center justify-center pt-8 lg:pt-14">
         <svg
@@ -78,7 +78,27 @@ const HeroSmallBanner = () => {
           </div>
         </div>
       </div>
-      {/* Hero Left */}
+
+      <svg
+        className="absolute md:hidden sm:block lg:block fill-[#003459] lg:fill-[#0A3052] -z-10 lg:mr-24 xl:mr-56 h-[600px] lg:h-[810px] transform -translate-x-1/2 z-5 bottom-0 lg:bottom-auto ml-40 -rotate-6 lg:rotate-[182deg]"
+        width="642"
+        height="378"
+        viewBox="0 0 642 378"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="238.67"
+          y="-360"
+          width="782.292"
+          height="635"
+          rx="99"
+          transform="rotate(25.23 238.67 -360)"
+          fill=""
+        />
+      </svg>
+
+      {/* Hero Image */}
       <Image
         src={heroBanner1}
         alt="Hero_Banner"
@@ -86,6 +106,6 @@ const HeroSmallBanner = () => {
       />
     </div>
   );
-}
+};
 
-export default HeroSmallBanner
+export default HeroSmallBanner;

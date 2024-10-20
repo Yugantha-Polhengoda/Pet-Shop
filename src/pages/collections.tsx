@@ -78,7 +78,7 @@ export default function Collections() {
     <div className="">
       <div className="md:px-10 lg:px-8 xl:px-[130px] mx-auto">
         <Navbar />
-        <div className="flex items-center gap-2 text-zinc-500 text-sm pt-2 md:pt-8 sm:p-0">
+        <div className="flex items-center gap-2 text-zinc-500 text-sm pt-2 md:pt-8 sm:p-0 mx-4">
           Home{" "}
           <svg
             width="5"
@@ -135,6 +135,8 @@ export default function Collections() {
                 </select>
               </div>
             </div>
+
+            {/* Filter contents */}
             <div className="hidden sm:block">
               <div className="py-3 border-b-2 border-[#e5e5e5]">
                 <p className="mb-3 text-sm font-medium">Gender</p>

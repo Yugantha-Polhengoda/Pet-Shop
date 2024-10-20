@@ -5,9 +5,7 @@ import adoptionBanner from "/public/Images/adoptionBanner1.png";
 
 const AdoptionBanner = () => {
     return (
-      <div
-        className="hidden lg:flex flex-col lg:flex-row lg:h-[400px] text-center lg:text-left bg-[#FFB775] overflow-hidden px-5 lg:pl-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]"
-      >
+      <div className="relative hidden lg:flex flex-col lg:flex-row lg:h-[400px] text-center lg:text-left bg-[#FFB775] overflow-hidden px-5 lg:pl-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]">
         {/* Hero left */}
         <div className=" w-full flex item-center justify-center">
           <div className="text-[#414141]">
@@ -74,10 +72,43 @@ const AdoptionBanner = () => {
           </div>
         </div>
         {/* Hero Left */}
+
+        <svg
+          className="absolute z-0 mt-24 ml-[445px]"
+          width="701"
+          height="315"
+          viewBox="0 0 701 315"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            opacity="0.3"
+            width="787.54"
+            height="787.54"
+            rx="99"
+            transform="matrix(-0.880881 0.473338 0.473338 0.880881 659.507 -34.2795)"
+            fill="url(#paint0_linear_78_489)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_78_489"
+              x1="0"
+              y1="0"
+              x2="958.452"
+              y2="218.934"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.0616933" stop-color="#FCEED5" />
+              <stop offset="0.751415" stop-color="#FCEED5" />
+              <stop offset="1" stop-color="#FFE7BA" />
+            </linearGradient>
+          </defs>
+        </svg>
+
         <Image
           src={adoptionBanner}
           alt="Hero_Banner"
-          className="lg:max-w-[485px] xl:w-auto mt-4 lg:mt-10 -rotate-90"
+          className="lg:max-w-[485px] xl:w-auto mt-4 lg:mt-10 -rotate-90 z-10"
         />
       </div>
     );
