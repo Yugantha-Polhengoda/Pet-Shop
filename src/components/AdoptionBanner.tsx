@@ -5,7 +5,9 @@ import adoptionBanner from "/public/Images/adoptionBanner1.png";
 
 const AdoptionBanner = () => {
     return (
-      <div className="hidden lg:flex flex-col lg:flex-row lg:h-[400px] text-center lg:text-left bg-[#F8E6C1] overflow-hidden px-5 lg:pl-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]">
+      <div
+        className="hidden lg:flex flex-col lg:flex-row lg:h-[400px] text-center lg:text-left bg-[#FFB775] overflow-hidden px-5 lg:pl-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]"
+      >
         {/* Hero left */}
         <div className=" w-full flex item-center justify-center">
           <div className="text-[#414141]">

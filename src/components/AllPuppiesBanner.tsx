@@ -43,7 +43,7 @@ const AllPuppiesBanner = () => {
       {/* Hero Left */}
       <div className="relative w-full flex justify-center items-center mt- lg:ml-20">
         <svg
-          className="absolute max-w-[500px] sm:max-w-full z-10 mt-60 sm:mt-80 ml-20 sm:-ml-[97px]"
+          className="absolute max-w-[500px] sm:max-w-full z-10 mt-60 sm:mt-[324px] ml-20 sm:-ml-[97px]"
           width="702"
           height="413"
           viewBox="0 0 702 413"
@@ -82,7 +82,7 @@ const AllPuppiesBanner = () => {
         <Image
           src={AllPuppies}
           alt="Hero_Banner"
-          className="w-auto lg:w-[600px] mt-4 lg:mt-[185px] z-20"
+          className="w-auto lg:w-[600px] mt-4 lg:mt-[120px] z-20"
         />
       </div>
     </div>
