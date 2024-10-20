@@ -40,14 +40,22 @@ const PetsList = () => {
           </h2>
 
           <Link href="/collections">
-            <button className="hidden sm:flex border border-[#0A3052] text-sm text-[#0A3052] h-10 px-4 sm:px-8 gap-2 rounded-full items-center hover:bg-[#0A3052] hover:text-white transition">
+            <button className="hidden sm:flex border border-[#0A3052] text-sm font-medium text-[#0A3052] h-10 px-4 sm:px-8 gap-4 rounded-full items-center hover:bg-[#0A3052] hover:text-white transition">
               View more
               <svg
-                className="w-4 h-4 border-[#0A3052]"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+                width="7"
+                height="10"
+                viewBox="0 0 7 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M8 5v14l11-7z" />
+                <path
+                  d="M1.5 1L5.5 5L1.5 9"
+                  stroke="#003459"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </button>
           </Link>
@@ -57,6 +65,28 @@ const PetsList = () => {
             <PetCard key={pet.id} pet={pet} />
           ))}
         </div>
+      </div>
+      <div className="px-2 mt-5">
+        <Link href="/collections">
+          <button className="flex sm:hidden border border-[#0A3052] text-sm font-medium text-[#0A3052] w-full h-12 px-4 gap-4 rounded-full items-center justify-center hover:bg-[#0A3052] hover:text-white transition">
+            View more
+            <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 1L5.5 5L1.5 9"
+                stroke="#003459"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );

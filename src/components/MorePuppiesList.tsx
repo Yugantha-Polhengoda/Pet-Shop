@@ -42,14 +42,22 @@ const MorePuppiesList = () => {
           <h2 className="text-xl sm:text-2xl font-bold text-[#002A48] mb-6">
             See More Puppies
           </h2>
-          <button className="hidden sm:flex border border-[#0A3052] text-sm text-[#0A3052] h-10 px-4 sm:px-8 gap-2 rounded-full items-center hover:bg-[#0A3052] hover:text-white transition">
+          <button className="hidden sm:flex border border-[#0A3052] text-sm font-medium text-[#0A3052] h-10 px-4 sm:px-8 gap-4 rounded-full items-center hover:bg-[#0A3052] hover:text-white transition">
             View more
             <svg
-              className="w-4 h-4 border-[#0A3052]"
-              fill="currentColor"
-              viewBox="0 0 24 24"
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M8 5v14l11-7z" />
+              <path
+                d="M1.5 1L5.5 5L1.5 9"
+                stroke="#003459"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
         </div>

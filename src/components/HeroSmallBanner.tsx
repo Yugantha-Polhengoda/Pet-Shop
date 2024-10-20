@@ -5,9 +5,9 @@ import heroBanner1 from "/public/Images/heroBanner1.png";
 
 const HeroSmallBanner = () => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse lg:h-[400px] text-center lg:text-right bg-[#F8E6C1] overflow-hidden px-5 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]">
+    <div className="flex flex-col lg:flex-row-reverse lg:h-[400px] text-center lg:text-right bg-[#F8E6C1] overflow-hidden px-5 lg:pr-20 rounded-3xl mx-2 md:mx-5 lg:mx-7 xl:mx-[110px]">
       {/* Hero left */}
-      <div className="w-full flex item-center justify-center pt-8">
+      <div className="w-full flex item-center justify-center pt-8 lg:pt-14">
         <div className="text-[#414141]">
           <div className="items-center gap-2">
             <h1 className="text-[34px] md:text-5xl font-extrabold text-[#002A48]">
@@ -44,7 +44,7 @@ const HeroSmallBanner = () => {
       <Image
         src={heroBanner1}
         alt="Hero_Banner"
-        className="lg:max-w-[485px] xl:w-auto mt-4 lg:mt-10"
+        className="lg:max-w-[485px] xl:w-auto mt-4 lg:mt-14"
       />
     </div>
   );
