@@ -181,7 +181,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2 md:gap-12 lg:gap-6">
             <div className="flex items-center relative">
-              <button className="relative xl:absolute text-[#99A2A5]">
+              <button className="relative xl:absolute text-[#99A2A5] lg:ml-3">
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 23 23"
