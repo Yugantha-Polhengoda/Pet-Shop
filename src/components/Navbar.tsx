@@ -57,7 +57,7 @@ export default function Navbar() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_101_1100)">
+                <g clipPath="url(#clip0_101_1100)">
                   <path
                     d="M32.569 32.6316C33.2111 32.6316 33.7428 32.8491 34.1691 33.2787C34.606 33.7083 34.8165 34.244 34.8165 34.8805C34.8165 35.5169 34.606 36.042 34.1691 36.4823C33.7428 36.9119 33.2111 37.1293 32.569 37.1293H31.1847V39.4737H30.0688V32.6369H32.569V32.6316ZM32.569 36.0686C33.2269 36.0686 33.7007 35.57 33.7007 34.8752C33.7007 34.1803 33.2269 33.6818 32.569 33.6818H31.1847V36.0633H32.569V36.0686Z"
                     fill="#103559"
@@ -179,9 +179,9 @@ export default function Navbar() {
             </nav>
           </div>
 
-          <div className="flex items-center gap-2 md:gap-12 xl:gap-6">
+          <div className="flex items-center gap-2 md:gap-12 lg:gap-6">
             <div className="flex items-center relative">
-              <button className="relative xl:absolute text-[#99A2A5] lg:ml-3">
+              <button className="relative xl:absolute text-[#99A2A5]">
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 23 23"
